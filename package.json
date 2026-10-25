@@ -1,0 +1,20 @@
+{
+  "name": "api-gateway-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start:user": "node user-service.js",
+    "start:order": "node order-service.js",
+    "start:gateway": "node gateway.js",
+    "test": "node --test tests/system.test.js",
+    "benchmark": "node scripts/benchmark.js",
+    "smoke": "node scripts/smoke.js"
+  },
+  "dependencies": {
+    "express": "5.1.0",
+    "jsonwebtoken": "9.0.2",
+    "minio": "8.0.5"
+  }
+}
